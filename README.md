@@ -7,5 +7,5 @@ Harp-based static site generator for [puig.io](https://puig.io).
 ```
 yarn install
 npm run build
-rpm run deploy
+npm run deploy
 ```
