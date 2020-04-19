@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rudisimo/puig.io.git"
+    "url": "git@github.com:rudisimo/puig.io.git"
   },
   "author": "Rodolfo Puig",
   "author_email": "rodolfo@puig.io",
