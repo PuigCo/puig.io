@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 jobs:
-  gh-pages:
+  build-and-deploy:
     runs-on: ubuntu-18.04
 
     strategy:
