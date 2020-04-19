@@ -1,0 +1,26 @@
+{
+  "name": "puig.io",
+  "version": "1.0.0",
+  "description": "Puig & Co.",
+  "homepage": "https://puig.io",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "harp": "^0.32.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "harp server src",
+    "build": "harp compile src doc",
+    "deploy": "gh-pages -d doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudisimo/puig.io.git"
+  },
+  "author": "Rodolfo Puig",
+  "author_email": "rodolfo@puig.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rudisimo/puig.io/issues"
+  }
+}
