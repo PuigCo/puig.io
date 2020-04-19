@@ -19,7 +19,7 @@
   },
   "author": "Rodolfo Puig",
   "author_email": "rodolfo@puig.io",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rudisimo/puig.io/issues"
   }
