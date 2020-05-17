@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/rudisimo
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://puig.io
+  * I am rudisimo (https://keybase.io/rudisimo) on keybase.
+  * I have a public key with fingerprint 609A 3B65 6697 DC4D 4BDD  6466 5B36 4035 0B63 E69F
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010165522cfb656ac4b0a526da6e2c1f8745518c30d1553f168a6d3c48af3dea2efe0a",
+      "fingerprint": "609a3b656697dc4d4bdd64665b3640350b63e69f",
+      "host": "keybase.io",
+      "key_id": "5b3640350b63e69f",
+      "kid": "010165522cfb656ac4b0a526da6e2c1f8745518c30d1553f168a6d3c48af3dea2efe0a",
+      "uid": "7712124d5172842ac8215c2d5c31c900",
+      "username": "rudisimo"
+    },
+    "service": {
+      "hostname": "puig.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1589689238,
+  "expire_in": 157680000,
+  "prev": "16743ca00fff7c0b6818f5f32cc9d478e1fcbd39fbddfc0a7a5758ba32c60c61",
+  "seqno": 34,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMImAnicrZJbSBVBGMdXK0W7vlRQFLVBRBxrZ3dnds+piMIoKCizC13oNDuX46ae
+XXf3mCUaXSiiKyQV3TSILAopIxK6YBklBoVURAXdJNPAwOpEPXSZtXrrsXkZ5uP3
+/8//+2ZuD+4n5WZkzDh2avPoFVUZ924eSElrmq8erJQth26QY5VyMevbWAllfhAv
+tqkckxWgAAShqhJuIYgw0S0FQxVRjJhKADcNHUJgEk2hAEKNA2RiRDWim5hrlGGV
+caZgOSJzO5lgnuvZyUDYIiWKtdAQRQ1KdKpblCIdIWhpSFc0qFhIYyjKhbDI8UOF
+CGdhn02xHVETh3hfvH/w/zl3qs/OMIAKVJ1CYKimrmJiqgASlUKiARJVlBD0mZfE
+pUzQXoravl3qyFURWVTLbcLCwYad/CHclJ343YrrOYFDnBJRLAoC14+FomCDG1Lr
+mRX/o49bdpKKEQpFOfN820nKMSBIEtihIYBmFJlRVTMjMqtwbY/F7ZCABjIVscJ7
+WLmwBMjQNYIVhXNuEDE2E5gcck0lJEp1w2SAE4tqUS4ehBMFGxga0LSwAJBCEJDD
+jsqSjhzTdJETJ4SnbyeSOEh5TK661by6v5SRK2UNyAz/lpSbM+zvj8u5lv2Tc6lx
++pWnU29kJQfOyDbHTT2bubK3Z8CDjsPb3DN3Jpy/f/motKt70cU9kcd5Gz/tXdX0
+NX/iwpm3Rl2sLKpu631+paDhbcH1iD+l8WS9BdPvWrM6J1Z8mf1SHvO6XuKX8jrf
+DFlk1T/cdvjHhwfzJK+ruuN9Nft2sHBacVdd1rzJ37f3VNILyxqCuetnPTvhLd+a
+HpSd1906K+94zcg5w9I1G08XHBgatB9CT/aOe7SlrGRH0JT6vKzWXbzuwtPM6yNi
+4xP7Ghv2l01v3rKn5FVZ9tKaI+lN+d3nqz9ebXc7W9OF5/If4qq6BaxlwthYbeGS
+NSvvzl+7s2VEbFLbbjfSPRy+uPELZu9BOw==
+=1PHk
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rudisimo
+
+==================================================================
