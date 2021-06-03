@@ -5,7 +5,7 @@
   "homepage": "https://puig.io",
   "dependencies": {
     "gh-pages": "^2.2.0",
-    "harp": "^0.32.0"
+    "harp": "^0.40.2"
   },
   "devDependencies": {},
   "scripts": {
