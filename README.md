@@ -1,19 +1,19 @@
-# Puig & Co.
-
-![Github Pages](https://github.com/rudisimo/puig.io/workflows/Github%20Pages/badge.svg?branch=master)
-
-Harp-based static site generator for [puig.io](https://puig.io).
+# Puig & Co
 
 ## Quickstart
 
+Setup `Dev Container` environment:
+
+```bash
+devcontainer open .
 ```
-yarn install
-yarn start
+
+Create new redirect:
+
+```bash
+hugo new content --kind redirect r/my-redirect.md
 ```
 
 ## License
 
-- [MIT License]
-
-
-[MIT License]: https://github.com/rudisimo/puig.io/blob/master/LICENSE
+Licensed under the [MIT](LICENSE.txt) license.
