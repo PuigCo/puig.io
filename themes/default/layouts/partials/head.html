@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="{{ or site.Language.LanguageCode site.Language.Lang }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{{- if .IsHome }}
+  <title>{{ site.Title | emojify }}</title>
+  <meta name="title" content="{{ site.Title | emojify }}" />
+{{- else -}}
+  <title>{{ printf "%s | %s" .Title site.Title | emojify }}</title>
+  <meta name="title" content="{{ printf "%s | %s" .Title site.Title | emojify }}" />
+{{ end -}}
+{{ with (.Params.Summary | default .Params.Description) | default site.Params.description }}
+  <meta name="description" content="{{ . }}" />
+{{ end }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}
+{{ partialCached "head/favicons.html" . }}
+{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+  {{ partial "analytics/main.html" site }}
+{{ end -}}
+</head>

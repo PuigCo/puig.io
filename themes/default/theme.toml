@@ -1,0 +1,19 @@
+name = 'Puig & Co.'
+license = 'MIT'
+licenselink = 'https://github.com/rudisimo/puig.io/blob/main/LICENSE.txt'
+description = 'A simple theme for Puig & Co.'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/rudisimo/puig.io'
+
+# If you have a running demo of the theme
+demosite = 'https://puig.io'
+
+# Taxonomy terms
+tags = []
+features = []
+
+# If the theme has a single author
+[author]
+  name = 'Rodolfo Puig'
+  homepage = 'https://github.com/rudisimo'
