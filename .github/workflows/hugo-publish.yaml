@@ -1,0 +1,93 @@
+name: Publish Hugo site to GitHub Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    paths-ignore:
+      - '.devcontainer/**'
+      - '.vscode/**'
+      - '.gitignore'
+      - 'README.md'
+      - 'LICENSE.txt'
+  # Runs on pull requests
+  pull_request:
+  # Allows you to run this workflow manually
+  workflow_dispatch:
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # Define environment variables
+    env:
+      HUGO_VERSION: "0.124.1"
+
+    # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+    permissions:
+      contents: read
+
+    # Specify runner + build steps
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # Fetch all history for .GitInfo and .Lastmod
+          submodules: recursive # Fetch Hugo themes (true OR recursive)
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Hugo
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
+            --minify \
+            --enableGitInfo \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Fix permissions
+        run: |
+          chmod -c -R +rX "./public/" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step (only on main)
+    runs-on: ubuntu-latest
+    if: github.ref_name == github.event.repository.default_branch
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
