@@ -1,0 +1,31 @@
+{
+    "build": {
+        "context": "..",
+        "dockerfile": "Dockerfile",
+        "args": {
+            "HUGO_VERSION": "v0.124.1"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "editorconfig.editorconfig",
+                "tamasfe.even-better-toml",
+                "davidanson.vscode-markdownlint",
+                "mutantdino.resourcemonitor",
+                "shardulm94.trailing-spaces",
+                "usernamehw.errorlens"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            }
+        }
+    },
+    "portsAttributes": {
+        "1313": {
+            "label": "Hugo Preview",
+            "onAutoForward": "notify"
+        }
+    },
+    "remoteUser": "vscode"
+}

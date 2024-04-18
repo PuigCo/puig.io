@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "hugo-build",
+            "type": "shell",
+            "command": "test -z '${env:REMOTE_CONTAINERS}' || hugo --minify -d dist --cleanDestinationDir --logLevel warn",
+            "args": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "silent",
+                "close": true
+            },
+            "group": "build"
+        },
+        {
+            "label": "hugo-watch",
+            "type": "shell",
+            "command": "test -z '${env:REMOTE_CONTAINERS}' || hugo server -D -F -w --logLevel debug --bind 0.0.0.0 --printI18nWarnings",
+            "args": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "silent",
+                "close": true
+            },
+            "group": "build",
+            "isBackground": true,
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}
