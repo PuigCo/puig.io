@@ -19,7 +19,7 @@ endif
 # Enable debugging
 debug ?=
 ifneq ($(strip $(debug)),)
-	args += --debug --logLevel=debug
+	args += --logLevel=debug
 endif
 
 # Enable minification

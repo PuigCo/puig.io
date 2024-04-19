@@ -55,7 +55,7 @@ jobs:
           HUGO_ENV: production
         run: |
           make build \
-            domain=${{ github.repository }} \
+            domain=${{ github.event.repository.name }} \
             minify=1 \
             warn=1
 
