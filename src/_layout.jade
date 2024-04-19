@@ -9,16 +9,15 @@ html(prefix="og: http://ogp.me/ns#", lang="en")
     meta(property="og:title", content="#{ title }")
     meta(property="og:type", content="website")
     meta(property="og:url", content="#{ uri }")
-    meta(property="og:image", content="logo.png")
-    link(rel="image_src", href="logo.png")
+    meta(property="og:image", content="/logo.png")
+    link(rel="image_src", href="/logo.png")
     // stylesheets
-    link(rel="stylesheet", href="/reset.css", type="text/css", media="screen")
     link(rel="stylesheet", href="/main.css", type="text/css", media="screen")
     // fav and touch icons
-    link(rel="shortcut icon", href="favicon.ico")
-    link(rel="apple-touch-icon", href="apple-touch-icon.png")
-    link(rel="apple-touch-icon", sizes="72x72", href="apple-touch-icon-72.png")
-    link(rel="apple-touch-icon", sizes="114x114", href="apple-touch-icon-114.png")
-    link(rel="apple-touch-icon", sizes="144x144", href="apple-touch-icon-144.png")
+    link(rel="shortcut icon", href="/favicon.ico")
+    link(rel="apple-touch-icon", href="/apple-touch-icon.png")
+    link(rel="apple-touch-icon", sizes="72x72", href="/apple-touch-icon-72.png")
+    link(rel="apple-touch-icon", sizes="114x114", href="/apple-touch-icon-114.png")
+    link(rel="apple-touch-icon", sizes="144x144", href="/apple-touch-icon-144.png")
   body
     != yield

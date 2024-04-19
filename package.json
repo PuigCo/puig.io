@@ -1,25 +1,34 @@
 {
   "name": "puig.io",
-  "version": "1.0.0",
-  "description": "Puig & Co.",
-  "homepage": "https://puig.io",
-  "dependencies": {
-    "gh-pages": "^2.2.0",
-    "harp": "^0.32.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "harp server src",
-    "build": "harp compile src dist",
-    "deploy": "gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:rudisimo/puig.io.git"
-  },
-  "author": "Rodolfo Puig",
+  "version": "2.0.0",
+  "description": "Next.js-based static website generator.",
+  "author": "Puig & Co.",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rudisimo/puig.io/issues"
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "lint": "next lint",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "date-fns": "^2.11.1",
+    "gray-matter": "^4.0.2",
+    "next": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "remark": "^14.0.1",
+    "remark-html": "^15.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.3",
+    "@types/react": "^17.0.14",
+    "babel-plugin-transform-define": "^1.3.0",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5",
+    "next-compose-plugins": "^2.2.1",
+    "sass": "^1.51.0",
+    "typescript": "^4.3.5"
   }
 }

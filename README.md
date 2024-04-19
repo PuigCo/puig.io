@@ -1,19 +1,16 @@
 # Puig & Co.
 
-[![Github Pages](actions/workflows/gh-pages.yml/badge.svg)](actions/workflows/gh-pages.yml)
+[![Github Pages](https://github.com/rudisimo/puig.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/rudisimo/puig.io/actions/workflows/gh-pages.yml)
 
-Harp-based static site generator.
+Next.js-based static site generator.
 
 ## Quickstart
 
 ```
 yarn install
-yarn start
+yarn dev
 ```
 
 ## License
 
-- [MIT License]
-
-
-[MIT License]: LICENSE
+- [MIT License](LICENSE)
