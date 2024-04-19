@@ -1,0 +1,3 @@
+[services]
+  [services.googleanalytics]
+    ID = "G-5K0P2T4WGR"

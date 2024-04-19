@@ -4,22 +4,21 @@
         {
             "label": "hugo-build",
             "type": "shell",
-            "command": "test -z '${env:REMOTE_CONTAINERS}' || hugo --minify -d dist --cleanDestinationDir --logLevel warn",
+            "command": "test -z '${env:REMOTE_CONTAINERS}' || make build domain=${input:domain} dest=dist/${input:domain} debug=1 warn=1",
             "args": [],
             "options": {
                 "cwd": "${workspaceFolder}"
             },
             "problemMatcher": [],
             "presentation": {
-                "reveal": "silent",
-                "close": true
+                "reveal": "always"
             },
             "group": "build"
         },
         {
             "label": "hugo-watch",
             "type": "shell",
-            "command": "test -z '${env:REMOTE_CONTAINERS}' || hugo server -D -F -w --logLevel debug --bind 0.0.0.0 --printI18nWarnings",
+            "command": "test -z '${env:REMOTE_CONTAINERS}' || make dev debug=1 strict=1",
             "args": [],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -35,5 +34,16 @@
                 "runOn": "folderOpen"
             }
         }
+    ],
+    "inputs": [
+      {
+        "id": "domain",
+        "description": "Which Hugo website to render?",
+        "type": "pickString",
+        "options": [
+          "puig.io",
+          "puigco.com"
+        ]
+      }
     ]
 }

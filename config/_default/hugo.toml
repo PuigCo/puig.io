@@ -10,9 +10,7 @@ disableHugoGeneratorInject = true
 disableKinds = ["rss", "section", "sitemap", "taxonomy", "term"]
 enableMissingTranslationPlaceholders = true
 enableRobotsTXT = true
-
-# Custom settings
-googleAnalytics = "G-5K0P2T4WGR"
+enableGoogleAnalytics = true
 
 [languages]
   [languages.en]
@@ -20,7 +18,3 @@ googleAnalytics = "G-5K0P2T4WGR"
     languageCode = "en"
     [languages.en.params]
       description = "Providing AWS consulting and professional services."
-
-[permalinks]
-  [permalinks.page]
-    redirects = "/r/:slugorfilename"

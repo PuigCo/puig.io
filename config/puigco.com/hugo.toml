@@ -1,0 +1,3 @@
+[services]
+  [services.googleAnalytics]
+    ID = "G-31NQDF2328"

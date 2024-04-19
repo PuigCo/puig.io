@@ -16,7 +16,7 @@
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
 {{ partialCached "head/favicons.html" . }}
-{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
-  {{ partial "analytics/main.html" site }}
+{{- if not hugo.IsDevelopment }}
+  {{ partial "analytics/ga.html" . }}
 {{ end -}}
 </head>
