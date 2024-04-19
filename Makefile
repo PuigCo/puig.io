@@ -8,7 +8,7 @@ env ?= production
 dest ?= public
 
 # Define default parameters
-args := --environment=$(env) --destination=$(dest) --cleanDestinationDir --verbose
+args := --environment=$(env) --destination=$(dest) --cleanDestinationDir
 
 # Enable warnings
 warn ?=
@@ -19,7 +19,7 @@ endif
 # Enable debugging
 debug ?=
 ifneq ($(strip $(debug)),)
-	args += --logLevel=debug
+	args += --debug --logLevel=debug
 endif
 
 # Enable minification
