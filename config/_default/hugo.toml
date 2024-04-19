@@ -7,8 +7,9 @@ defaultContentLanguage = "en"
 
 # Hugo settings
 disableHugoGeneratorInject = true
-disableKinds = ["robotstxt", "rss", "section", "sitemap", "taxonomy", "term"]
+disableKinds = ["rss", "section", "sitemap", "taxonomy", "term"]
 enableMissingTranslationPlaceholders = true
+enableRobotsTXT = true
 
 # Custom settings
 googleAnalytics = "G-5K0P2T4WGR"
