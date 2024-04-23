@@ -4,7 +4,7 @@
         {
             "label": "hugo-build",
             "type": "shell",
-            "command": "test -z '${env:REMOTE_CONTAINERS}' || make build domain=${input:domain} dest=dist/${input:domain} debug=1 warn=1",
+            "command": "test -z '${env:REMOTE_CONTAINERS}' || make build debug=1 warn=1 domain=${input:domain} dest=dist/${input:domain}",
             "args": [],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -18,7 +18,7 @@
         {
             "label": "hugo-watch",
             "type": "shell",
-            "command": "test -z '${env:REMOTE_CONTAINERS}' || make dev debug=1 strict=1",
+            "command": "test -z '${env:REMOTE_CONTAINERS}' || make dev debug=1 warn=1",
             "args": [],
             "options": {
                 "cwd": "${workspaceFolder}"

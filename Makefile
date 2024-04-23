@@ -8,7 +8,7 @@ env ?= production
 dest ?= public
 
 # Define default parameters
-args := --environment=$(env) --destination=$(dest) --cleanDestinationDir
+args := --destination=$(dest) --cleanDestinationDir
 
 # Enable warnings
 warn ?=
@@ -39,8 +39,8 @@ all: dev
 
 .PHONY: build
 build:
-	hugo $(args)
+	hugo --environment=$(env) $(args)
 
 .PHONY: dev
 dev:
-	hugo server $(args) --bind 0.0.0.0 -D -F -w
+	hugo server --bind 0.0.0.0 -D -F -w $(args)
