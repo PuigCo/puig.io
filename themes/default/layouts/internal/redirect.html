@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}">
+  <head>
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url={{ .Permalink | absURL }}">
+    <link rel="canonical" href="{{ .Permalink | absURL }}">
+    <script type="text/javascript">
+      window.location.href = "{{ .Permalink | absURL }}";
+    </script>
+    <title>Redirecting to {{ .Title }}</title>
+  </head>
+  <body>
+    Click this <a href="{{ .Permalink | absURL }}">link</a>, if you are not redirected automatically.
+  </body>
+</html>
