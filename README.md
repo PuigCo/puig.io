@@ -1,4 +1,4 @@
-# Puig & Co
+# Puig & Co.
 
 ## Quickstart
 
@@ -16,4 +16,6 @@ hugo new content --kind redirect r/my-redirect.md
 
 ## License
 
-Licensed under the [MIT](LICENSE.txt) license.
+This code is licensed under the [MIT License](LICENSE.txt).
+
+See the [`NOTICE.txt`](NOTICE.txt) file for required notices and attributions.
