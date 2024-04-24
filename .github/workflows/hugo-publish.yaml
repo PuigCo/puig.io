@@ -9,6 +9,7 @@ on:
       - '.gitignore'
       - 'README.md'
       - 'LICENSE.txt'
+      - 'NOTICE.txt'
   # Runs on pull requests
   pull_request:
   # Allows you to run this workflow manually
